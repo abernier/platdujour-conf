@@ -15,7 +15,6 @@
   "dependencies": {
     "rc": "0",
     "optimist": "0",
-    "ini": "1",
-    "tea-properties": "0.1.1"
+    "ini": "1"
   }
 }
