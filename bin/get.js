@@ -9,6 +9,9 @@ var argv = require('optimist')
 
 var conf = require('..');
 
-var value = conf[argv._[0]] || "";
+var key = argv._[0] || "";
+
+var properties = require('tea-properties'); // see https://npmjs.org/package/tea-properties
+var value = properties.get(conf, key);
 
 console.log(value);
