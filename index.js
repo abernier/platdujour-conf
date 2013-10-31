@@ -1,6 +1,8 @@
+var fs = require('fs');
+var ini = require('ini');
+
+var defaults = ini.parse(fs.readFileSync('./default.ini', 'utf-8'));
+
 var rc = require('rc');
 
-module.exports = rc('platdujour', {
-  couch_host: 'http://localhost:5984', // default CouchDB in admin party mode
-  couch_db: '/platdujour'
-});
+module.exports = rc('platdujour', defaults);
