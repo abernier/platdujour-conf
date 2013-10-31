@@ -1,7 +1,7 @@
 var fs = require('fs');
 var ini = require('ini');
 
-var defaults = ini.parse(fs.readFileSync('./defaults.ini', 'utf-8'));
+var defaults = ini.parse(fs.readFileSync(__dirname + '/defaults.ini', 'utf-8'));
 
 var rc = require('rc');
 
