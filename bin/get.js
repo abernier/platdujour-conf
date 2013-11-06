@@ -8,7 +8,6 @@ var argv = require('optimist')
     ;
 
 var conf = require('..');
-console.log(conf)
 
 var key = argv._[0] || "";
 
